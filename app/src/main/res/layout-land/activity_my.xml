@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".MyActivity">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_panel"
+        android:layout_alignParentTop="true"
+        class="com.shufange.fragmentlayouts.MainPanelFragment"
+        android:layout_toRightOf="@+id/side_panel"
+        android:layout_toEndOf="@+id/side_panel" />
+
+    <fragment
+        android:layout_width="215dp"
+        android:layout_height="match_parent"
+        android:id="@+id/side_panel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        class="com.shufange.fragmentlayouts.SidePanelFragment"/>
+
+
+</RelativeLayout>
